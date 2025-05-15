@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Artboard1 from '../assets/Image/Artboard1.jpg';
 import Artboard2 from '../assets/Image/Artboard2.jpg';
 import Artboard3 from '../assets/Image/Artboard3.jpg';
