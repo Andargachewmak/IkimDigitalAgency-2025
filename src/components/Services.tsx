@@ -5,17 +5,7 @@ const Services = () => {
     <div id="services" className="text-center py-12 sm:py-20 bg-black w-full flex justify-center">
       <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Top Section - Designs that Inspire with Moving Animation */}
-        <div className="mb-12 flex items-center justify-center animate-[slide-right_4s_ease-in-out_infinite]">
-          <div className="w-12 h-12 bg-[#F15B5F] rounded-full flex items-center justify-center text-white font-bold text-sm mr-4" />
-          <h2
-            className="text-3xl sm:text-4xl font-extrabold text-white"
-            style={{ fontFamily: "Anton, sans-serif" }}
-          >
-            Designs that Inspire
-          </h2>
-          <div className="w-12 h-12 bg-[#F15B5F] rounded-full flex items-center justify-center text-white font-bold text-sm ml-4" />
-        </div>
+        
 
         {/* Subsection - Our Services */}
         <div className="flex flex-col md:flex-row items-center justify-between text-left mb-8 sm:mb-12">

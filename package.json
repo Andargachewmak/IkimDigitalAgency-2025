@@ -1,5 +1,5 @@
 {
-  "name": "azera",
+  "name": "hacreativesite-123",
   "homepage": "https://github.com/Andargachewmak.github.io/hacreativesite-123",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.3",

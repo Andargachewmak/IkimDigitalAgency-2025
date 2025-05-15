@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Projects from "./components/Project";
 import Services from "./components/Services";
+import Testimonial from "./components/Testimonials";
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
       <Services/>
       <StatsSection/>
       <Projects/>
+      <Testimonial/>
       <CTA/>
       <Footer />
     </div>
