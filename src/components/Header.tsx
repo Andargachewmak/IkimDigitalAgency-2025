@@ -141,7 +141,7 @@ const Header = () => {
       {isOpen && (
         <div
           ref={menuRef}
-          className="md:hidden absolute top-full left-0 w-full bg-EPrimary shadow-md py-4"
+          className="md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4"
         >
           <ul className="flex flex-col space-y-4 px-4">
             {navbar.map((nav) => {
@@ -151,7 +151,7 @@ const Header = () => {
                   <a
                     href={nav.href}
                     className={`block py-2 px-2 font-semibold transition-colors duration-200 ${
-                      isActive ? "underline text-white" : "text-yellow-500"
+                      isActive ? " text-[#F15B5F]" : "text-[#F15B5F]"
                     } hover:text-white`}
                   >
                     {nav.name}
@@ -185,7 +185,7 @@ const Header = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span>Telegram Bot</span>
+                <span>Get in Touch</span>
               </button>
             </li>
           </ul>
