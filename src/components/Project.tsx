@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import Artboard1 from '../assets/Image/Artboard1.jpg';
-import Artboard2 from '../assets/Image/Artboard2.jpg';
-import Artboard3 from '../assets/Image/Artboard3.jpg';
+import Artboard2 from '../assets/Image/balle.jpg';
+import Artboard3 from '../assets/Image/Edemy_Logo copy 8-100.jpg';
 import Artboard4 from '../assets/Image/Artboard4.jpg';
 import Artboard5 from '../assets/Image/Artboard5.jpg';
 import Artboard6 from '../assets/Image/Artboard6.jpg';
+import BAAZ3 from '../assets/Image/BAAZ3.jpg';
+import BAAZ from '../assets/Image/BAAZ.jpg';
+import BAAZ4 from '../assets/Image/BAAZ4.jpg';
 
 const projects = [
   {
@@ -21,7 +24,7 @@ We’re incredibly pleased with the finished logo and bespoke font, and when our
   },
   {
     id: 2,
-    title: 'Project Beta',
+    title: 'Edemy',
     client: 'Beta Agency',
     category: 'Branding',
     contributors: 'Jane Doe',
@@ -42,14 +45,14 @@ The result is a visually appealing and functional website that empowers users to
   },
   {
     id: 4,
-    title: 'Nexora App',
+    title: 'BALLE BAZZA',
     client: 'Nexora Tech',
     category: 'Mobile App Design',
     contributors: 'Michael Lee',
     summary: `Nexora Tech needed a mobile app to streamline communication between employees and management. The goal was to create an intuitive platform for task management, notifications, and collaboration.
 We designed a sleek, modern app with a focus on usability. Features include real-time messaging, task tracking, and customizable dashboards. The app uses a minimalist color scheme with bold accents to ensure clarity and focus.
 The final product received positive feedback from both employees and management, significantly improving workplace efficiency.`,
-    images: [Artboard2, Artboard3, Artboard4, Artboard5],
+    images: [BAAZ3, BAAZ, BAAZ4, BAAZ4],
   },
   {
     id: 5,
@@ -92,6 +95,7 @@ const ProjectGallery = () => {
   const openModal = (project: Project) => {
     setLoading(true);
     setSelectedProject(project);
+    setCurrentImageIndex(0);
     setTimeout(() => setLoading(false), 1500);
   };
 
@@ -124,49 +128,51 @@ const ProjectGallery = () => {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
           onClick={() => setSelectedProject(null)}
         >
+          {/* Close Button outside modal box */}
+          <button
+            className="absolute top-6 right-6 text-white text-3xl z-50 bg-black bg-opacity-70 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-90 transition"
+            onClick={() => setSelectedProject(null)}
+            aria-label="Close Modal"
+          >
+            &times;
+          </button>
+
           <div
-            className="bg-black max-w-7xl w-full rounded-lg shadow-lg overflow-y-auto max-h-[90vh]"
+            className="bg-black max-w-7xl w-full rounded-lg shadow-lg overflow-y-auto max-h-[90vh] relative"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button */}
-            <button
-              className="absolute top-4 right-4 text-white text-3xl z-50"
-              onClick={() => setSelectedProject(null)}
-              aria-label="Close Modal"
-            >
-              &times;
-            </button>
-
-            {/* Loading State - Arrow Rotates Around Circle */}
+            {/* Loading State */}
             {loading ? (
-              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
-                <div className="relative w-[250px] h-[250px]">
-                  {/* Outer Circle Border */}
-                  <div className="absolute inset-0 rounded-full border-4 border-white border-opacity-40"></div>
-
-                  {/* Rotating Arrow Around Circle */}
-                  <div className="absolute inset-0 animate-spin-around">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
-
-                  {/* Center Text */}
-                  <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xl font-semibold z-10 animate-pulse">
-                    Loading...
-                  </p>
-                </div>
+              <div
+                className="flex flex-col items-center justify-center w-full h-96 bg-black bg-opacity-90 rounded-t-lg"
+                role="alert"
+                aria-live="assertive"
+                aria-label="Loading project details"
+              >
+                <svg
+                  className="animate-spin h-16 w-16 text-[#F15B5F]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="#F15B5F"
+                    d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                  />
+                </svg>
+                <p className="mt-4 text-[#F15B5F] text-lg font-semibold tracking-wide select-none">
+                  Ha Creative's project...
+                </p>
               </div>
             ) : (
               <>

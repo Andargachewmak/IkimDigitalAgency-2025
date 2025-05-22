@@ -940,3 +940,146 @@ span.flatpickr-weekday,
 .animate-spin-around {
   animation: spin-around 4s linear infinite;
 }
+/* Menu Overlay */
+.menu-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.remove-circe-mobile-2,
+.remove-circle-2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.remove-circe-mobile-2 img,
+.remove-circle-2 img {
+  width: 75px;
+  height: auto;
+}
+
+/* Project Item Page Section */
+.project-item-page-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.container-full-width-project-hero-image {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.w-layout-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Menu Styles */
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.div-block-2 {
+  padding: 20px;
+}
+
+.menu-content-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navlinks-wrapper-2 {
+  position: relative;
+}
+
+.navlinks-2 {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navlinks-2:hover {
+  color: #007bff;
+}
+
+.line-overlay-nav-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes bounce-dot {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20%); }
+}
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 10px #F15B5F;
+  }
+  50% {
+    opacity: 0.7;
+    text-shadow: 0 0 20px #F15B5F;
+  }
+}
+
+/* Gradient border for the ring */
+.border-gradient {
+  border-image-slice: 1;
+  border-width: 8px;
+  border-style: solid;
+  border-image-source: linear-gradient(45deg, #F15B5F, #FFD700, #FF4500);
+}
+
+/* Animation helpers */
+.animate-spin {
+  animation: spin 2.5s linear infinite;
+}
+.animate-bounce-dot {
+  animation: bounce-dot 1.5s ease-in-out infinite;
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
