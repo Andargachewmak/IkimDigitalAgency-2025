@@ -65,7 +65,7 @@ const AboutUsSection: React.FC<AboutUsProps> = ({
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
               {description ||
-                "We’re your creative partner for marketing, branding, and communication. Our team builds bold ideas that connect with your audience and drive results. From strategy to design to media – we make sure your message hits the mark and helps your business grow."}
+                "At HA Creative, we don’t just build visuals or websites — we craft digital experiences that leave a lasting impression. We are a creative studio dedicated to blending strategic design, user-centered thinking, and modern web technology to help brands thrive in a digital-first world."}
             </p>
           </div>
 

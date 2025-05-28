@@ -101,6 +101,7 @@ const Header = () => {
                 return (
                   <li key={nav.name}>
                     <a
+
                       href={nav.href}
                       className={`py-2 px-2 font-semibold transition-colors duration-200 ${
                         isHomePage && !isScrolled

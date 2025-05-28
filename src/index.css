@@ -1208,15 +1208,3 @@ span.flatpickr-weekday,
     @apply bg-background text-foreground;
   }
 }
-@layer utilities {
-  .splash-dot {
-    pointer-events: none;
-  }
-  .hero-container {
-    isolation: isolate; /* Keeps splash and parallax effects scoped */
-  }
-  .parallax-layer {
-    will-change: transform;
-    transform: translateZ(0);
-  }
-}

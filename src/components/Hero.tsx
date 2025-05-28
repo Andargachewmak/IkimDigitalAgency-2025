@@ -36,8 +36,10 @@ const Hero: React.FC = () => {
           <div id="part-1" className="part-1">
             <div className="hero-flex-center left">
               <p className="paragraph-1 text-gray-300 text-base md:text-lg font-light leading-relaxed animate-fade-in-left">
-                Will Paterson Design Studio is a leading boutique studio for the
-                creation of best-in-class logo design and brand identity.
+                Design. Experience. Functionality.  
+We bring your ideas to life through stunning graphics, intuitive interfaces,  
+and performant web development — all in one place.
+
               </p>
             </div>
           </div>
@@ -56,11 +58,9 @@ const Hero: React.FC = () => {
           <div id="part-3" className="part-3">
             <div className="hero-flex-center left">
               <p className="paragraph-2 text-gray-300 text-base md:text-lg font-light leading-relaxed animate-fade-in-right">
-                We educate people about their brand stories, identity, design,
-                and business. Through creative excellence, we transform brands
-                into sustainable success stories that inspire customers and
-                employees alike.
-              </p>
+Graphics. UI/UX. Web Development.  
+We turn your vision into engaging, user-first digital experiences.  
+Built for beauty. Optimized for performance.              </p>
               <div className="margin-30px mt-6">
                 <a
                   href="/contact"

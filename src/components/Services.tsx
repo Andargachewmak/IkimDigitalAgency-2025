@@ -37,9 +37,11 @@ const Services = () => {
             className="text-sm sm:text-base text-white font-medium leading-relaxed md:w-1/3 ml-6"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
-            From bold brand identities to eye-catching print <br />
-            and digital materials, we bring your message to <br />
-            life and make sure it stands out.
+           At HA Creative, we specialize in transforming ideas <br />
+            into impactful digital experiences. Our services <br />
+             include Graphics Design, UI/UX Design, and <br />
+             Web Development — all tailored to help brands  <br />
+             stand out,engage users, and grow with confidence.
           </p>
         </div>
 
