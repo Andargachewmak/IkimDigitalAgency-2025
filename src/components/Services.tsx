@@ -1,93 +1,87 @@
+import React from "react";
+import {
+  FaVideo,
+  FaPaintBrush,
+  FaBullhorn,
+  FaComments,
+} from "react-icons/fa";
 
+const iconWrapperStyle = "w-20 h-20 rounded-full flex items-center justify-center mb-6 shadow-lg";
 
 const Services = () => {
   return (
-    <div id="services" className="text-center py-12 sm:py-20 bg-black w-full flex justify-center">
-      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="services"
+      className="bg-gradient-to-br from-[#0B0C10] via-[#10121A] to-[#0B0C10] py-16 px-6 sm:px-12 text-white"
+    >
+      <div className="max-w-7xl mx-auto">
+        <h2
+          className="text-4xl sm:text-5xl font-extrabold mb-12 text-center text-[#E5E5E5]"
+          style={{ fontFamily: "Anton, sans-serif" }}
+        >
+          Our Services
+        </h2>
 
-        
+        <p
+          className="max-w-3xl mx-auto mb-16 text-center text-lg sm:text-xl font-light leading-relaxed text-gray-300"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
+          Empowering brands with strategic social media marketing solutions.
+          From creative video editing and graphic design to targeted paid
+          advertising and expert consulting — we grow your digital presence
+          with impact.
+        </p>
 
-        {/* Subsection - Our Services */}
-        <div className="flex flex-col md:flex-row items-center justify-between text-left mb-8 sm:mb-12">
-          <h2
-            className="text-4xl sm:text-5xl font-extrabold text-white md:w-1/3"
-            style={{ fontFamily: "Anton, sans-serif" }}
-          >
-            Our Services
-          </h2>
-
-          <div className="flex-shrink-0 mx-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#F15B5F"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-8 h-8"
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Service Card */}
+          {[
+            {
+              title: "Video Editing",
+              icon: <FaVideo className="text-3xl text-[#FFD700]" />,
+              desc: "Crafting engaging videos optimized for social platforms, ensuring your message resonates and converts.",
+            },
+            {
+              title: "Graphics (Logo, Poster)",
+              icon: <FaPaintBrush className="text-3xl text-[#FFD700]" />,
+              desc: "Eye-catching logos, posters, and creatives tailored for your brand’s unique voice and style.",
+            },
+            {
+              title: "Paid Advertising",
+              icon: <FaBullhorn className="text-3xl text-[#FFD700]" />,
+              desc: "Targeted Facebook and Instagram ad campaigns designed to maximize ROI and grow your audience.",
+            },
+            {
+              title: "Consulting & Social Media Management",
+              icon: <FaComments className="text-3xl text-[#FFD700]" />,
+              desc: "Expert guidance and hands-on management to keep your social media channels thriving.",
+            },
+          ].map((service, i) => (
+            <div
+              key={i}
+              className="bg-[#1A1B25] hover:bg-[#2C2E3A] transition duration-300 rounded-xl p-8 shadow-xl flex flex-col items-center text-center group"
             >
-              <path d="M5 12l14 0" />
-              <line x1="12" y1="5" x2="19" y2="12" />
-              <line x1="12" y1="19" x2="19" y2="12" />
-            </svg>
-          </div>
-
-          <p
-            className="text-sm sm:text-base text-white font-medium leading-relaxed md:w-1/3 ml-6"
-            style={{ fontFamily: "Poppins, sans-serif" }}
-          >
-           At HA Creative, we specialize in transforming ideas <br />
-            into impactful digital experiences. Our services <br />
-             include Graphics Design, UI/UX Design, and <br />
-             Web Development — all tailored to help brands  <br />
-             stand out,engage users, and grow with confidence.
-          </p>
-        </div>
-
-        {/* Divider Line */}
-        <div className="w-full h-px bg-gray-700 mb-10"></div>
-
-        {/* Service Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
-          {/* Card 1 */}
-          <div className="bg-gray-800 hover:bg-[#F15B5F] transition-colors duration-300 p-6 rounded-lg shadow-md text-left">
-            <h3 className="text-xl font-bold text-white mb-2" style={{ fontFamily: "Anton, sans-serif" }}>
-              Branding Identity
-            </h3>
-            <div className="w-12 h-1 bg-[#F15B5F] mb-4 rounded"></div>
-            <p className="text-sm text-white" style={{ fontFamily: "Poppins, sans-serif" }}>
-              Logos, brand colors, typography, and visual systems that shape how people see your brand.
-            </p>
-            <div className="mt-6 h-24 bg-gray-700 rounded-lg"></div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-gray-800 hover:bg-[#F15B5F] transition-colors duration-300 p-6 rounded-lg shadow-md text-left">
-            <h3 className="text-xl font-bold text-white mb-2" style={{ fontFamily: "Anton, sans-serif" }}>
-              UI/UX Design
-            </h3>
-            <div className="w-12 h-1 bg-[#F15B5F] mb-4 rounded"></div>
-            <p className="text-sm text-white" style={{ fontFamily: "Poppins, sans-serif" }}>
-              Brochures, flyers, posters, packaging—everything you need in your customer’s hands.
-            </p>
-            <div className="mt-6 h-24 bg-gray-700 rounded-lg"></div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-gray-800 hover:bg-[#F15B5F] transition-colors duration-300 p-6 rounded-lg shadow-md text-left">
-            <h3 className="text-xl font-bold text-white mb-2" style={{ fontFamily: "Anton, sans-serif" }}>
-              Web Development
-            </h3>
-            <div className="w-12 h-1 bg-[#F15B5F] mb-4 rounded"></div>
-            <p className="text-sm text-white" style={{ fontFamily: "Poppins, sans-serif" }}>
-              Beautiful layouts for magazines, newspapers, and books that are both clear and engaging.
-            </p>
-            <div className="mt-6 h-24 bg-gray-700 rounded-lg"></div>
-          </div>
+              <div className={`${iconWrapperStyle} bg-[#0F1C2E] group-hover:bg-[#FFD700] transition`}>
+                {React.cloneElement(service.icon, {
+                  className: "text-3xl group-hover:text-[#0F1C2E]",
+                })}
+              </div>
+              <h3
+                className="text-xl font-bold mb-3 text-white group-hover:text-[#FFD700]"
+                style={{ fontFamily: "Anton, sans-serif" }}
+              >
+                {service.title}
+              </h3>
+              <p
+                className="text-sm sm:text-base font-light text-gray-300"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                {service.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

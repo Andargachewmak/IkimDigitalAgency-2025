@@ -13,16 +13,16 @@ const Footer: FC = () => {
             <div>
               <h4 className="text-white mb-4 font-semibold uppercase">Quick Links</h4>
               <ul className="space-y-3">
-                <li className="text-white hover:text-[#F15B5F] cursor-pointer transition-colors">
+                <li className="text-white hover:text-gray-200 cursor-pointer transition-colors">
                   <a href="#">Home</a>
                 </li>
-                <li className="text-white hover:text-[#F15B5F] cursor-pointer transition-colors">
+                <li className="text-white hover:text-gray-200 cursor-pointer transition-colors">
                   <a href="#about-us">About Us</a>
                 </li>
-                <li className="text-white hover:text-[#F15B5F] cursor-pointer transition-colors">
+                <li className="text-white hover:text-gray-200 cursor-pointer transition-colors">
                   <a href="#projects">Projects</a>
                 </li>
-                <li className="text-white hover:text-[#F15B5F] cursor-pointer transition-colors">
+                <li className="text-white hover:text-gray-200 cursor-pointer transition-colors">
                   <a href="#services">Services</a>
                 </li>
               </ul>
@@ -33,7 +33,7 @@ const Footer: FC = () => {
               <h4 className="text-white mb-4 font-semibold uppercase">Other Pages</h4>
               <ul className="space-y-3">
                 {["Privacy Policy", "Terms of Use", "Disclaimer", "FAQ"].map((item) => (
-                  <li key={item} className="text-white hover:text-[#F15B5F] cursor-pointer transition-colors">
+                  <li key={item} className="text-white hover:text-gray-200 cursor-pointer transition-colors">
                     {item}
                   </li>
                 ))}
@@ -44,28 +44,28 @@ const Footer: FC = () => {
             <div>
               <h4 className="text-white mb-4 font-semibold uppercase">Contact Info</h4>
               <ul className="space-y-3">
-                <li className="text-white hover:text-[#F15B5F] cursor-pointer transition-colors">
+                <li className="text-white hover:text-gray-200 cursor-pointer transition-colors">
                   Addis Ababa, Ethiopia
                 </li>
-                <li className="text-white hover:text-[#F15B5F] cursor-pointer transition-colors">
-                  +251902615767
+                <li className="text-white hover:text-gray-200 cursor-pointer transition-colors">
+                  +251954904064
                 </li>
-                <li className="text-white hover:text-[#F15B5F] cursor-pointer transition-colors">
-                  mail@domain.com
+                <li className="text-white hover:text-gray-200 cursor-pointer transition-colors">
+                 andargachewmekonn09@gmail.com
                 </li>
               </ul>
             </div>
 
             {/* Column 4: Brand + Social Icons */}
             <div>
-              <h3 className="text-white text-lg font-semibold mb-4">Ha creative</h3>
+              <h3 className="text-white text-lg font-semibold mb-4">Ikim Digital Agency</h3>
               <p className="text-white mb-5">
                 Creative studio crafting visual identities.
               </p>
               <div className="flex justify-center sm:justify-start gap-3">
                 <a 
-                  href="https://www.facebook.com/hacreativestudio" 
-                  className="bg-white hover:bg-[#F15B5F] transition-colors rounded-full shadow p-2.5" 
+                  href="https://web.facebook.com/andargachew.mekonnen.3" 
+                  className="bg-white hover:bg-gray-200 transition-colors rounded-full shadow p-2.5" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -73,8 +73,8 @@ const Footer: FC = () => {
                   <FaFacebookF className="text-black hover:text-white" size={14} />
                 </a>
                 <a 
-                  href="https://www.instagram.com/hacreativestudio" 
-                  className="bg-white hover:bg-[#F15B5F] transition-colors rounded-full shadow p-2.5" 
+                  href="https://www.instagram.com/andargachewm" 
+                  className="bg-white hover:bg-gray-200 transition-colors rounded-full shadow p-2.5" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -82,8 +82,8 @@ const Footer: FC = () => {
                   <FaInstagram className="text-black hover:text-white" size={14} />
                 </a>
                 <a 
-                  href="https://www.tiktok.com/@hacreativestudio" 
-                  className="bg-white hover:bg-[#F15B5F] transition-colors rounded-full shadow p-2.5" 
+                  href="https://vm.tiktok.com/ZMShNxHGQ/" 
+                  className="bg-white hover:bg-gray-200 transition-colors rounded-full shadow p-2.5" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="TikTok"
@@ -102,8 +102,8 @@ const Footer: FC = () => {
       {/* Bottom Section – Copyright on Bottom Left Only */}
       <div className="container mx-auto px-4">
         <p className="text-white text-sm text-left">
-          © 2025 - Ha creative. Developed by{" "}
-          <span className="hover:text-[#F15B5F] cursor-pointer transition-colors">Andargachew Mekonnen</span>
+          © 2025 -Ikim Digital Agency. Developed by{" "}
+          <span className="hover:text-gray-200 cursor-pointer transition-colors">Andargachew Mekonnen</span>
         </p>
       </div>
     </footer>

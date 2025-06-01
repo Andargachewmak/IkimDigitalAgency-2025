@@ -65,7 +65,7 @@ const AboutUsSection: React.FC<AboutUsProps> = ({
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
               {description ||
-                "At HA Creative, we don’t just build visuals or websites — we craft digital experiences that leave a lasting impression. We are a creative studio dedicated to blending strategic design, user-centered thinking, and modern web technology to help brands thrive in a digital-first world."}
+                "IKIM Agency is a results-driven social media marketing team specializing in video editing, graphic design, paid advertising, and social media management. We create bold, engaging content and campaigns that help brands grow, connect, and convert. From strategy to execution, we turn ideas into impact."}
             </p>
           </div>
 

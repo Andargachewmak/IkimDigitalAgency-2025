@@ -1208,3 +1208,13 @@ span.flatpickr-weekday,
     @apply bg-background text-foreground;
   }
 }
+/* index.css or global.css */
+:root {
+  --color-gold-300: #f8d477;
+  --color-gold-400: #eac44b;
+  --color-gold-500: #d4af37;
+  --color-emerald-deep: #014d4d;
+
+  --font-serif: 'Merriweather', serif;
+}
+

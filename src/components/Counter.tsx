@@ -74,7 +74,7 @@ const Counter = ({
       </div>
 
       {/* Label */}
-      <p className="text-[#F15B5F]">{label}</p>
+      <p className="text-[#FFD700]">{label}</p>
     </div>
   );
 };

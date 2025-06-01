@@ -47,15 +47,15 @@ const Header = () => {
       className={`fixed top-0 left-0 right-0 w-full z-50 py-6 transition-all duration-300 ${
         isHomePage
           ? isScrolled
-            ? "bg-[#F15B5F] shadow-md" // Show shadow when scrolled
+            ? "bg-gray-700 shadow-md" // Show shadow when scrolled
             : "bg-transparent shadow-none" // Hide shadow when at the top
-          : "bg-[#F15B5F] shadow-md"
+          : "bg-gray-700 shadow-md"
       }`}
     >
       <div className="container mx-auto max-w-7xl px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <h1 className="font-extrabold text-white">Ha creative</h1>
+          <h1 className="font-extrabold text-white">Ikim Digital Agency</h1>
 
           {/* Mobile Menu Button */}
           <button
@@ -107,7 +107,7 @@ const Header = () => {
                         isHomePage && !isScrolled
                           ? "text-white hover:text-gray-100"
                           : "text-white hover:text-gray-100"
-                      } ${isActive ? "underline text-black" : ""}`}
+                      } ${isActive ? "underline text-white" : ""}`}
                     >
                       {nav.name}
                     </a>
@@ -142,7 +142,7 @@ const Header = () => {
       {isOpen && (
         <div
           ref={menuRef}
-          className="md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4"
+          className="md:hidden absolute top-full left-0 w-full bg-gray-300 shadow-md py-4"
         >
           <ul className="flex flex-col space-y-4 px-4">
             {navbar.map((nav) => {
@@ -152,7 +152,7 @@ const Header = () => {
                   <a
                     href={nav.href}
                     className={`block py-2 px-2 font-semibold transition-colors duration-200 ${
-                      isActive ? " text-[#F15B5F]" : "text-[#F15B5F]"
+                      isActive ? " text-black" : "text-black"
                     } hover:text-white`}
                   >
                     {nav.name}
@@ -186,7 +186,7 @@ const Header = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span>Get in Touch</span>
+                <a href="#GetInTouch"><span>Get in Touch</span></a>
               </button>
             </li>
           </ul>

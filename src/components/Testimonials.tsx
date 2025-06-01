@@ -81,7 +81,7 @@ const Testimonial: FC = () => {
         </h2>
 
         {/* Description */}
-        <p className="text-center text-[#F15B5F] max-w-xl mx-auto mb-16 text-base md:text-lg font-poppins">
+        <p className="text-center text-[#FFD700] max-w-xl mx-auto mb-16 text-base md:text-lg font-poppins">
           Don't just take our word — hear it directly from our clients.
         </p>
 
@@ -105,11 +105,11 @@ const Testimonial: FC = () => {
                   <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-[#F15B5F]"
+                    className="w-12 h-12 rounded-full object-cover border-2 border-[#FFD700]"
                   />
                   <div>
                     <h4 className="font-semibold font-poppins">{testimonial.name}</h4>
-                    <p className="text-sm text-[#F15B5F] font-poppins">{testimonial.role}</p>
+                    <p className="text-sm text-[#FFD700] font-poppins">{testimonial.role}</p>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ const Testimonial: FC = () => {
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === current ? "bg-[#F15B5F] w-8" : "bg-gray-600 hover:bg-gray-500"
+                index === current ? "bg-[#FFD700] w-8" : "bg-gray-600 hover:bg-gray-500"
               }`}
               aria-label={`Go to testimonial page ${index + 1}`}
             ></button>
