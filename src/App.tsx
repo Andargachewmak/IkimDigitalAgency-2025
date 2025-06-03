@@ -1,7 +1,7 @@
 // import CTA from "./components/CTA";
 // import Features from "./components/Features";
 import AboutUsSection from "./components/About";
-import ContactForm from "./components/ContactUs";
+import ContactForm from "./components/Contactus";
 import StatsSection from "./components/Counter";
 import Footer from "./components/Footer";
 import Header from "./components/Header";

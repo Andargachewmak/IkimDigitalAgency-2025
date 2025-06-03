@@ -1217,4 +1217,10 @@ span.flatpickr-weekday,
 
   --font-serif: 'Merriweather', serif;
 }
+/* index.css or global.css */
+body {
+  @apply bg-black; /* Or bg-neutral-900, matching your hero video */
+  background-color: #000; /* Fallback for Tailwind just in case */
+  margin: 0;
+}
 
